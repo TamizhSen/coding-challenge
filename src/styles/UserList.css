@@ -1,0 +1,31 @@
+
+.no-scroll {
+    overflow: hidden;
+  }
+  
+  .user-list-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  
+  .loading-message, .error-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  @media (max-width: 1024px) {
+    .user-list-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .user-list-container {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
